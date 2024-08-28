@@ -18,6 +18,14 @@ h1 {
   margin-bottom: 30px;
 }
 
+img {
+  height: 100px;
+}
+
+li {
+  margin: 20px 0;
+}
+
 /* header {
   position: fixed;
   left: 0px;

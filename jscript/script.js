@@ -66,7 +66,7 @@ for (let i = 0; i < team.length; i++) {
   items += `<li>
   Membro: <b>${teamMember.completeName}</b><br>
   ruolo: ${teamMember.position}<br>
-  foto: <i>${teamMember.photo}</i>.
+  foto: <img src="img/${teamMember.photo}">.
   </li>`
 }
 
