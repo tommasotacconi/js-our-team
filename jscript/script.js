@@ -46,13 +46,10 @@ const team = [
 // 2. Mostro in console i dati inseriti con la const team
 console.log(team);
 
-// 3. Recupero gli elementi dal DOM
-const list = document.getElementById('team-list');
 
 // FASE DI ELABORAZIONE
-// 1. Creo una struttura per scrivere in console per ogni personalba
+// 2. Creo una struttura per scrivere in console per ogni personalba
 // le sue informazioni
-let items = '';
 for (let i = 0; i < team.length; i++) {
   teamMember = team[i];
   console.log(
@@ -71,3 +68,4 @@ for (let i = 0; i < team.length; i++) {
 
 // 3. Stampo le informazioni in pagina
 list.innerHTML = items;
+
