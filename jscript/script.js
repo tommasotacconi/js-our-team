@@ -71,4 +71,3 @@ for (let i = 0; i < team.length; i++) {
 
 // 3. Stampo le informazioni in pagina
 list.innerHTML = items;
-
