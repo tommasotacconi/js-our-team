@@ -10,6 +10,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+main {
+  padding: 50px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
 /* header {
   position: fixed;
   left: 0px;
