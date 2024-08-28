@@ -45,4 +45,14 @@ const team = [
 
 console.log(team);
 
-
+// FASE DI ELABORAZIONE
+// 2. Creo una struttura per scrivere in console per ogni personalba
+// le sue informazioni
+for (let i = 0; i < team.length; i++) {
+  teamMember = team[i];
+  console.log(
+    `Nome completo: ${teamMember.completeName};
+    ruolo: ${teamMember.position};
+    foto: ${teamMember.photo}.`
+  );
+}
