@@ -8,6 +8,7 @@
 /* Generics */
 body {
   font-family: "Sora", Georgia, Cambria, serif;
+  background-color: sandybrown;
 }
 
 main {
@@ -16,6 +17,7 @@ main {
 
 h1 {
   margin-bottom: 30px;
+  color: whitesmoke;
 }
 
 li img {
