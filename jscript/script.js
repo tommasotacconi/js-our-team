@@ -49,11 +49,15 @@ console.log(team);
 // 3. Recupero la lista dal DOM
 const list = document.getElementById('team-list');
 
+// 4. Recupero il box per le cards
+const cardsBox = document.getElementById('cards-box');
+
 
 // FASE DI ELABORAZIONE
 // 2. Creo una struttura per scrivere in console per ogni personalba
 // le sue informazioni
 let items = '';
+let cards= '';
 for (let i = 0; i < team.length; i++) {
   teamMember = team[i];
   console.log(
@@ -68,8 +72,30 @@ for (let i = 0; i < team.length; i++) {
   ruolo: ${teamMember.position}<br>
   foto: <img src="img/${teamMember.photo}">.
   </li>`
+  
+  // 5. Uso le cards di bootstrap per presentare i singoli membri
+  cards +=
+  `<div class="col">
+    <div class="card">
+      <img src="img/${teamMember.photo}" class="card-img-top" alt="member-photo">
+      <div class="card-body">
+        <h5 class="card-title">${teamMember.completeName}</h5>
+        <p class="card-text">Ruolo: ${teamMember.position}</p>
+      </div>
+    </div>
+  </div>`
 }
+
+// 6. Preparo la row da inserire in pagina
+const row = 
+`<div class="row row-cols-1 row-cols-md-3 g-4">
+  ${cards}
+</div>`
 
 // 3. Stampo le informazioni in pagina
 list.innerHTML = items;
+
+// 7. Stampo nuovamente le info in pagina
+cardsBox.innerHTML = row;
+
 

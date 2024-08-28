@@ -18,7 +18,7 @@ h1 {
   margin-bottom: 30px;
 }
 
-img {
+li img {
   height: 100px;
 }
 
@@ -77,3 +77,12 @@ li {
 } */
 
 /* Utilities */
+#cards-box {
+  margin-top: 100px;
+}
+
+.card-text {
+  font-size: 0.8rem;
+}
+
+
